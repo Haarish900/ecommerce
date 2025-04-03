@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #eee;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+    padding: 17px;
+    box-shadow: 0px 2px 2px 2px rgb(162, 162, 162);
+}
+
+nav .logo {
+    margin-left: 22px;
+    font-size: 24px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+ul li a {
+    margin-inline: 22px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+ul li i {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+ul li #home {
+    color: rgb(5, 167, 167);
+}
+
+ul li a:hover {
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+ul li i:hover {
+    color: gray;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.main .mainText {
+    max-width: 600px;
+}
+
+.mainText h1 {
+    font-size: 64px;
+}
+
+.mainText .top {
+    color: rgb(4, 138, 138);
+}
+
+.mainText button {
+    width: 145px;
+    height: 40px;
+    background-color: rgb(4, 140, 140);
+    border: none;
+    font-size: 22px;
+    color: white;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+.mainText p {
+    margin-top: 12px;
+}
+
+.mainText button:hover {
+    border: 3px solid rgb(3, 128, 128);
+    background-color: transparent;
+    color: rgb(2, 121, 121);
+}
+
+.head h1 {
+    text-align: center;
+    padding: 33px;
+    margin-top: 32px;
+}
+
+.head span {
+    color: rgb(2, 164, 164);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card .crd {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.crd img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.crdText {
+    margin-top: 15px;
+}
+
+.crdText button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: rgb(5, 141, 141);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.crdText button:hover {
+    background-color: rgb(4, 120, 120);
+}
+
+.blog {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.blog .blogText {
+    margin-top: 15px;
+}
+
+.blogText a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(4, 136, 136);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.blogText a:hover {
+    background-color: rgb(3, 110, 110);
+}
+
+.letter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(2, 2, 66);
+    color: white;
+    padding: 43px;
+}
+
+.inp {
+    display: flex;
+    gap: 10px;
+}
+
+.inp input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.inp button {
+    padding: 10px 20px;
+    background-color: rgb(2, 173, 173);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inp button:hover {
+    background-color: rgb(1, 150, 150);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 53px;
+    background-color: #333;
+    color: white;
+}
+
+.footer .footerText {
+    max-width: 250px;
+}
+
+.footerText p {
+    margin-top: 11px;
+}
+
+/* About */
+.about {
+    display: none;
+    padding: 50px;
+}
+
+.aboutus {
+    background-color: rgb(1, 1, 42);
+    color: white;
+    padding: 56px;
+    font-size: 19px;
+}
+
+.me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 33px;
+    background-color: #fff;
+    margin-top: 7%;
+}
+
+.me img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* Contact */
+.contact {
+    display: none;
+    padding: 50px;
+}
+
+.contactus {
+    background-color: rgb(1, 1, 42);
+    color: white;
+    padding: 56px;
+    font-size: 19px;
+}
+
+.contactMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 33px;
+    background-color: #fff;
+    margin-top: 5%;
+}
+
+.contactMe img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.contactText {
+    max-width: 600px;
+}
+
+.contactText p {
+    margin-top: 12px;
+}
+
+.form {
+    text-align: center;
+    margin-top: 5%;
+    padding: 22px;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(2, 54, 54);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 22px;
+}
+
+.form button:hover {
+    background-color: rgb(1, 40, 40);
+}
+
+/* Cart */
+.cart {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.cartHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cartHeader h2 {
+    margin: 0;
+}
+
+.cartHeader i {
+    cursor: pointer;
+}
+
+.cartItems {
+    margin-bottom: 20px;
+}
+
+.cartTotal {
+    text-align: right;
+}
+
+.cartTotal button {
+    padding: 10px 20px;
+    background-color: rgb(2, 173, 173);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cartTotal button:hover {
+    background-color: rgb(1, 150, 150);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mainText h1 {
+        font-size: 48px;
+    }
+
+    .card .crd {
+        width: 100%;
+    }
+
+    .blog {
+        flex-direction: column;
+    }
+
+    .letter {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .me, .contactMe {
+        flex-direction: column;
+    }
+
+    .me img, .contactMe img {
+        width: 100%;
+    }
+
+    .cart {
+        width: 100%;
+    }
+}
